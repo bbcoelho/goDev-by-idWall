@@ -19,8 +19,10 @@ class CustomCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageBlock: UIImageView!
     @IBOutlet weak var labelBlock: UILabel!
     
-    func setup(imageSource: String) {
-        imageBlock.image = UIImage(named: imageSource)
-        labelBlock.text = imageSource
+    func setup(imageSource: String, name: String) {
+        if let image = UIImage(named: imageSource) {
+            imageBlock.image = image
+        }
+        labelBlock.text = name
     }
 }
