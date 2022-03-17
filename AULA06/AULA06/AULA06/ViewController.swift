@@ -25,6 +25,10 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate {
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Teste \(indexPath.row)")
+    }
+    
 }
 
 extension ViewController: UITableViewDataSource {
@@ -34,10 +38,13 @@ extension ViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customCell", for: indexPath)
         
         cell.textLabel?.text = "Zelda"
         cell.detailTextLabel?.text = "The Legend of Zelda: A Link to the Past, também conhecido como Zelda no Densetsu: Kamigami no Triforce no Japão, é um jogo eletrônico de ação-aventura desenvolvido e publicado pela Nintendo para o Super Nintendo Entertainment System."
+        
+        cell.imageView?.image = UIImage(systemName: "gamecontroller")
+        cell.imageView?.tintColor = .purple
         
         return cell
     }
