@@ -195,7 +195,7 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTf-og-yaP">
-                                <rect key="frame" x="136" y="740" width="142" height="56"/>
+                                <rect key="frame" x="100" y="740" width="214" height="56"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Repositório" subtitle="Github">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
@@ -210,11 +210,12 @@
                             <constraint firstItem="iep-PT-ern" firstAttribute="top" secondItem="rKH-AD-yVa" secondAttribute="top" id="6cg-6h-0Ba"/>
                             <constraint firstItem="rKH-AD-yVa" firstAttribute="trailing" secondItem="3yD-rH-u10" secondAttribute="trailing" constant="20" id="8QP-ur-Sqk"/>
                             <constraint firstItem="rKH-AD-yVa" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aTf-og-yaP" secondAttribute="trailing" priority="750" id="97g-gP-8qA"/>
+                            <constraint firstItem="aTf-og-yaP" firstAttribute="leading" secondItem="rKH-AD-yVa" secondAttribute="leading" constant="100" id="C4E-lm-DyR"/>
                             <constraint firstItem="3yD-rH-u10" firstAttribute="top" secondItem="iep-PT-ern" secondAttribute="bottom" constant="8" symbolic="YES" id="C7i-kq-cgJ"/>
-                            <constraint firstItem="aTf-og-yaP" firstAttribute="leading" secondItem="rKH-AD-yVa" secondAttribute="leading" constant="136" id="IKU-dk-1uj"/>
                             <constraint firstItem="iep-PT-ern" firstAttribute="leading" secondItem="rKH-AD-yVa" secondAttribute="leading" constant="20" id="Ixs-ec-uky"/>
                             <constraint firstItem="3yD-rH-u10" firstAttribute="leading" secondItem="rKH-AD-yVa" secondAttribute="leading" constant="20" id="N0t-Hv-Vov"/>
                             <constraint firstItem="aTf-og-yaP" firstAttribute="bottom" secondItem="rKH-AD-yVa" secondAttribute="bottom" constant="-17" id="TPv-q2-Y05"/>
+                            <constraint firstItem="rKH-AD-yVa" firstAttribute="trailing" secondItem="aTf-og-yaP" secondAttribute="trailing" constant="100" id="nxQ-Io-kYP"/>
                             <constraint firstItem="rKH-AD-yVa" firstAttribute="trailing" secondItem="iep-PT-ern" secondAttribute="trailing" constant="20" id="wHK-8C-jO8"/>
                         </constraints>
                     </view>
