@@ -31,7 +31,7 @@ class CategoriesViewController: UIViewController {
     
     private func setupLayout() {
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: view.frame.size.width / 2 - 6, height: 168)
+        layout.itemSize = CGSize(width: view.frame.size.width / 2 - 12, height: 168)
         layout.minimumLineSpacing = 12
         collectionView.collectionViewLayout = layout
     }
