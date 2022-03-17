@@ -18,8 +18,10 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        delegates()
+        title = "Home"
+        
         createData()
+        delegates()
     }
     
     private func delegates() {
@@ -61,6 +63,8 @@ extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeTableViewCell.identifier, for: indexPath) as? HomeTableViewCell
         else { return UITableViewCell() }
+        
+        cell.configureCell(data: personsData[indexPath.row])
         
         return cell
     }

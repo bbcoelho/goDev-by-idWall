@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5134DC2D27E2A0DF00579BBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134DC2C27E2A0DF00579BBD /* AppDelegate.swift */; };
 		5134DC2F27E2A0DF00579BBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134DC2E27E2A0DF00579BBD /* SceneDelegate.swift */; };
-		5134DC3127E2A0DF00579BBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134DC3027E2A0DF00579BBD /* ViewController.swift */; };
+		5134DC3127E2A0DF00579BBD /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134DC3027E2A0DF00579BBD /* AboutViewController.swift */; };
 		5134DC3427E2A0DF00579BBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5134DC3227E2A0DF00579BBD /* Main.storyboard */; };
 		5134DC3627E2A0E100579BBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5134DC3527E2A0E100579BBD /* Assets.xcassets */; };
 		5134DC3927E2A0E100579BBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5134DC3727E2A0E100579BBD /* LaunchScreen.storyboard */; };
@@ -18,13 +18,14 @@
 		5134DC4727E2B97F00579BBD /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134DC4527E2B97F00579BBD /* CustomCollectionViewCell.swift */; };
 		5134DC4827E2B97F00579BBD /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5134DC4627E2B97F00579BBD /* CustomCollectionViewCell.xib */; };
 		5134DC4A27E2BA0600579BBD /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5134DC4927E2BA0600579BBD /* CategoriesViewController.swift */; };
+		99821BCC27E351B60069B99A /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99821BCB27E351B60069B99A /* AboutTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5134DC2927E2A0DF00579BBD /* DESAFIO_AULA08_CIDADES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DESAFIO_AULA08_CIDADES.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5134DC2C27E2A0DF00579BBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5134DC2E27E2A0DF00579BBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5134DC3027E2A0DF00579BBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5134DC3027E2A0DF00579BBD /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		5134DC3327E2A0DF00579BBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5134DC3527E2A0E100579BBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5134DC3827E2A0E100579BBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +35,7 @@
 		5134DC4527E2B97F00579BBD /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		5134DC4627E2B97F00579BBD /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		5134DC4927E2BA0600579BBD /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		99821BCB27E351B60069B99A /* AboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,16 +68,13 @@
 		5134DC2B27E2A0DF00579BBD /* DESAFIO_AULA08_CIDADES */ = {
 			isa = PBXGroup;
 			children = (
-				5134DC4027E2AEBA00579BBD /* HomeViewController.swift */,
-				5134DC4227E2AF4B00579BBD /* HomeTableViewCell.swift */,
+				99821BCA27E34C960069B99A /* Cells */,
+				99821BC927E34C7F0069B99A /* View Controllers */,
 				5134DC2C27E2A0DF00579BBD /* AppDelegate.swift */,
 				5134DC2E27E2A0DF00579BBD /* SceneDelegate.swift */,
-				5134DC3027E2A0DF00579BBD /* ViewController.swift */,
 				5134DC3227E2A0DF00579BBD /* Main.storyboard */,
 				5134DC3527E2A0E100579BBD /* Assets.xcassets */,
-				5134DC4927E2BA0600579BBD /* CategoriesViewController.swift */,
 				5134DC3727E2A0E100579BBD /* LaunchScreen.storyboard */,
-				5134DC4427E2B97F00579BBD /* CustomCell */,
 				5134DC3A27E2A0E100579BBD /* Info.plist */,
 			);
 			path = DESAFIO_AULA08_CIDADES;
@@ -88,6 +87,26 @@
 				5134DC4627E2B97F00579BBD /* CustomCollectionViewCell.xib */,
 			);
 			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		99821BC927E34C7F0069B99A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5134DC4027E2AEBA00579BBD /* HomeViewController.swift */,
+				5134DC4927E2BA0600579BBD /* CategoriesViewController.swift */,
+				5134DC3027E2A0DF00579BBD /* AboutViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		99821BCA27E34C960069B99A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5134DC4227E2AF4B00579BBD /* HomeTableViewCell.swift */,
+				5134DC4427E2B97F00579BBD /* CustomCell */,
+				99821BCB27E351B60069B99A /* AboutTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5134DC3127E2A0DF00579BBD /* ViewController.swift in Sources */,
+				5134DC3127E2A0DF00579BBD /* AboutViewController.swift in Sources */,
+				99821BCC27E351B60069B99A /* AboutTableViewCell.swift in Sources */,
 				5134DC4727E2B97F00579BBD /* CustomCollectionViewCell.swift in Sources */,
 				5134DC4327E2AF4B00579BBD /* HomeTableViewCell.swift in Sources */,
 				5134DC2D27E2A0DF00579BBD /* AppDelegate.swift in Sources */,
