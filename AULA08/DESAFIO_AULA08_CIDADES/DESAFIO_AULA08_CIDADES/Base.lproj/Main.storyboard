@@ -201,6 +201,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
                                     <fontDescription key="subtitleFontDescription" type="system" pointSize="0.0"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="openRepository:" destination="gDt-Vl-icr" eventType="touchUpInside" id="JdE-sJ-ryr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rKH-AD-yVa"/>

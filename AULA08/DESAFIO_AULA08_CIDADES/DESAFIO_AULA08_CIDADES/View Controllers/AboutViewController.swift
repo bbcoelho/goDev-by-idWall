@@ -27,6 +27,18 @@ class AboutViewController: UIViewController {
         createData()
     }
 
+    @IBAction func openRepository(_ sender: Any) {
+        guard let url = URL(string: "https://github.com/bbcoelho/goDev-by-idWall/tree/main/AULA08/DESAFIO_AULA08_CIDADES") else {
+            return //be safe
+        }
+
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+
     private func delegates() {
         tableView.delegate = self
         tableView.dataSource = self
