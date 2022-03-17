@@ -65,7 +65,7 @@ extension CategoriesViewController: UICollectionViewDelegate, UICollectionViewDa
         
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCollectionViewCell.identifier, for: indexPath) as? CustomCollectionViewCell else { return UICollectionViewCell() }
         
-        cell.setup(imageSource: cities[indexPath.row].cityImage)
+        cell.setup(imageSource: cities[indexPath.row].cityImage, name: cities[indexPath.row].cityName)
         
         return cell
     }
