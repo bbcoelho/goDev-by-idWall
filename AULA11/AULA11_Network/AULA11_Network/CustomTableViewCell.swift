@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CustomTableViewCell: UITableViewCell {
 
@@ -16,10 +17,16 @@ class CustomTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        userImage.layer.cornerRadius = userImage.frame.size.width / 2
     }
 
     func setup(imageURL: String, name: String, company: String) {
-        userImage.loadImage(from: imageURL)
+        
+        // userImage.loadImage(from: imageURL)
+        
+        let url = URL(string: imageURL)
+        
+        userImage.kf.setImage(with: url)
         nameLabel.text = name
         companyLabel.text = company
     }

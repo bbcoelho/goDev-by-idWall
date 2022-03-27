@@ -68,27 +68,4 @@ extension ViewController: UITableViewDataSource {
         return cell
     }
     
-/*
-  
- extension ViewController: UITableViewDataSource {
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         return games.count
-     }
-     
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         
-         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell", for: indexPath) as? CustomTableViewCell
-         else { return UITableViewCell() }
-         
-         let game = games[indexPath.row]
-         
-         cell.setup(logo: game.logo, name: game.name, description: game.description)
-         
-         return cell
-         
-     }
-
-    
-*/
-    
 }

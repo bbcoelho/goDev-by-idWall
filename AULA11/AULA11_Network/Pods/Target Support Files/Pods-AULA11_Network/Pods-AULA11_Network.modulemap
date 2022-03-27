@@ -1,0 +1,6 @@
+module Pods_AULA11_Network {
+  umbrella header "Pods-AULA11_Network-umbrella.h"
+
+  export *
+  module * { export * }
+}

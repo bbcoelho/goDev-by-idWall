@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Alamofire
 
 enum UserError: Error {
     case urlInvalid
@@ -34,6 +35,14 @@ class Service: ServiceProtocol {
         
         guard let url = URL(string: url) else { return completion(.failure(.urlInvalid)) }
         
+        AF.request(url, method: .get).validate().responseDecodable(of: [User].self) { response in
+            
+            guard let users = response.value else { return }
+            
+            completion(.success(users))
+        }
+        
+/*
         let dataTask = session.dataTask(with: url) { data, _ , _ in
             
             do {
@@ -53,6 +62,7 @@ class Service: ServiceProtocol {
         }
                                         
         dataTask.resume()
+ */
     }
-    
+        
 }
